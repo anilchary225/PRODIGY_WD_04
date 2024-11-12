@@ -1,0 +1,476 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+
+
+/* Full-Screen Sections */
+section {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column; /* Stack header and content vertically */
+  justify-content: center; /* Align items to the start of the section */
+  align-items: center; /* Center content horizontally */
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Main Header */
+#main-header {
+  position: fixed;           /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: #fff;              /* White text color for readability */
+  z-index: 100;             /* Ensure it stays on top of other elements */
+  padding: 1rem;            /* Padding for spacing */
+  display: flex;            /* Flexbox for layout */
+  justify-content: space-between; /* Space out logo and nav items */
+  align-items: center;      /* Center items vertically */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional shadow */
+}
+
+/* Main Heading (Logo or Portfolio Title) */
+#main-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+/* Navigation Menu */
+#main-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#main-header nav ul li {
+  margin-right: 1.5rem;
+}
+
+#main-header nav ul li a {
+  text-decoration: none;
+  color: #fff;              /* White text for links */
+  font-size: 1.1rem;
+}
+
+#main-header nav ul li a:hover {
+  color: #f0db4f;           /* Change link color on hover */
+}
+/* Full-Screen Sections */
+section {
+  position: relative;                /* Position for the overlay */
+  height: 100vh;                    /* Full viewport height */
+  display: flex;
+  flex-direction: column;           /* Stack header and content vertically */
+  justify-content: center;      /* Align items to the top */
+  align-items: center;              /* Center content horizontally */
+  padding: 2rem;
+  color: #fff;                      /* Text color */
+  text-align: center;
+}
+
+/* Overlay for sections */
+section::before {
+  content: "";                       /* Empty content for the overlay */
+  position: absolute;                /* Position it absolutely */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+  z-index: 1;                       /* Place below the text */
+}
+
+section h2 {
+  position: relative;               /* Position relative to the section */
+  z-index: 2;                       /* Place above the overlay */
+  font-size: 3rem;
+  margin-bottom: 1rem;              /* Space below the heading */
+}
+
+section p,
+.skills-container,
+.projects-container,
+form {
+  position: relative;               /* Position relative to the section */
+  z-index: 2;                       /* Place above the overlay */
+  padding: 1rem;                    /* Add padding for spacing */
+  max-width: 800px;                 /* Limit width for readability */
+}
+
+
+
+
+
+
+
+
+
+/* Main Header */
+#main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background for the header */
+  color: #fff;
+  z-index: 100; /* Ensure it stays on top of other elements */
+  padding: 1rem;
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for depth */
+  
+}
+
+
+/* Main Heading (Logo or Portfolio Title) */
+#main-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+/* Navigation Menu */
+#main-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#main-header nav ul li {
+  margin-right: 1.5rem;
+}
+
+#main-header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+#main-header nav ul li a:hover {
+  color: #f0db4f; /* Optional: Change link color on hover */
+}
+
+/* Add space at the top of the page content to avoid overlap */
+body {
+  padding-top: 80px; /* Adjust this value to the height of your header */
+}
+
+
+
+
+
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url('https://img.freepik.com/free-vector/abstract-black-lines-geometric-background_677411-2748.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 2rem;
+  color: #fff;
+}
+
+#home img {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+#home h1
+.name {
+  font-size: 2em; /* Adjust the size as needed */
+  font-weight: bold; /* Make it bold */
+  color: #fff; /* Change color if desired */
+  margin-top: -20px; /* Adjust this value to move it up */
+}
+
+#home h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+
+#home p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* About Section */
+#about {
+  background-image: url('https://e0.pxfuel.com/wallpapers/138/150/desktop-wallpaper-big-website-background-big-website-epidemic.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+}
+
+#about ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#about ul li {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #fff;
+}
+/* Skills Section */
+#skills {
+  background-image: url('https://img.freepik.com/premium-photo/black-table-with-black-table-white-plate-with-tea-cup-it_916191-240193.jpg'); /* Add your image path here */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+#skills::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better text readability */
+  z-index: 1;
+}
+
+#skills h2, .skills-container {
+  position: relative;
+  z-index: 2;
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  flex-basis: 20%;
+  margin: 1rem;
+  text-align: center;
+}
+
+.skill i {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.skill h3 {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Make skills responsive */
+@media (max-width: 768px) {
+  .skill {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill {
+    flex-basis: 100%;
+  }
+}
+
+/* Projects Section */
+#projects {
+  background-image: url('https://img.freepik.com/premium-photo/black-rectangular-mockups-dark-concrete-background-design-elements-portfolio-copy-space_76255-1751.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#projects .project {
+  background-color: rgba(0, 0, 0, 0.7); /* Adds a transparent layer for readability */
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#projects .project h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #120202;
+}
+.projects-container {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-between; /* Space items evenly */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if they overflow */
+  gap: 20px; /* Space between items */
+}
+
+.project-item {
+  background-color: rgba(244, 244, 244, 0.8); /* Semi-transparent background */
+  border: 1px solid rgba(221, 221, 221, 0.8); /* Semi-transparent border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the container */
+  width: 300px; /* Fixed width for each project item */
+  transition: background-color 0.3s; /* Smooth background color change */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.project-link {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Text color */
+}
+
+.project-link:hover {
+  background-color: #010407; /* Change background on hover */
+}
+
+.github-button {
+  display: inline-block; /* Make the link behave like a button */
+  background-color: #333; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 15px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  margin-top: 10px; /* Space between link and button */
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.github-button:hover {
+  background-color: #555; /* Darker shade on hover */
+}
+
+
+
+/* Contact Section */
+#contact {
+  background-image: url('https://img.freepik.com/premium-photo/black-background-with-stationery_641503-322271.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#contact form button {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+#contact form button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #ffffff; /* LinkedIn color */
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
